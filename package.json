@@ -1,0 +1,24 @@
+{
+  "name": "rcb-ferreira.github.io",
+  "version": "1.0.0",
+  "description": "[Landing Page](http://startbootstrap.com/template-overviews/landing-page/) is a multipurpose landing page template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcb-ferreira/rcb-ferreira.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcb-ferreira/rcb-ferreira.github.io/issues"
+  },
+  "homepage": "https://github.com/rcb-ferreira/rcb-ferreira.github.io#readme",
+  "dependencies": {
+    "bower": "^1.8.0",
+    "grunt": "^1.0.1"
+  }
+}
