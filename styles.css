@@ -28,9 +28,9 @@ html, body {
 .mdl-demo .mdl-layout__tab-bar-button {
   display: none;
 }
-.mdl-demo .mdl-layout.is-small-screen .mdl-layout__tab-bar .mdl-button {
+/*.mdl-demo .mdl-layout.is-small-screen .mdl-layout__tab-bar .mdl-button {
   display: none;
-}
+}*/
 .mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar,
 .mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar-container {
   overflow: visible;
@@ -102,7 +102,7 @@ html, body {
 .mdl-demo #add {
   position: absolute;
   right: 40px;
-  top: 36px;
+  top: 3px;
   z-index: 999;
 }
 
