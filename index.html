@@ -1,330 +1,642 @@
-<!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
+<html xmlns="http://www.w3.org/1999/xhtml" style="transform-origin: 0px 0px 0px; transform: scale(1);"><head>
+    <title>Wedding Invitation</title>
 
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="telephone=no" name="format-detection" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-      https://www.apache.org/licenses/LICENSE-2.0
+		<link href="http://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet" type="text/css">
 
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Material Design Lite</title>
+		<style type="text/css">
+			body {
+				-webkit-text-size-adjust: none;
+				-ms-text-size-adjust: none;
+			}
+			body, img, div, p, ul, li, span, strong, a {
+				margin: 0;
+				padding: 0;
+			}
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+			table {
+				border-spacing: 0;
+			}
+			table td {
+				border-collapse: collapse;
+			}
 
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+			body, #body_style {
+				width: 100% !important;
+				color: #888888;
+				font-size: 11px;
+				line-height: 1;
+				font-family: 'Lato', Arial, Helvetica, sans-serif;
+				font-weight: 400;
+				background: #ffffff;
+			}
+			a {
+				color: #888888;
+				text-decoration: none;
+				outline: none;
+			}
+			a:link {
+				color: #888888;
+				text-decoration: none;
+			}
+			a:visited {
+				color: #888888;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: none !important;
+			}
 
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
+			.tel a {
+				color: #ffffff;
+			}
 
-    <link rel="shortcut icon" href="images/favicon.png">
+			img {
+				border: none !important;
+				outline: none !important;
+				text-decoration: none;
+				height: auto;
+				max-width: 100%;
+				display: block;
+			}
+			a {
+				border: none !important;
+				outline: none !important;
+			}
+			table {
+				border-collapse: collapse;
+				mso-table-lspace: 0pt;
+				mso-table-rspace: 0pt;
+			}
+			tr, td {
+				margin: 0;
+				padding: 0;
+			}
 
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
+			@media all and (max-width: 639px) {
+				body[yahoo] .wrapper {
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css"> -->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-indigo.min.css" />
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
+					width: 100% !important;
+				}
 
-    <script type="text/javascript" charset="utf-8" src="https://code.jquery.com/jquery-2.x-git.min.js"></script>
-  </head>
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <h3>Crime Scene Manager <small>Big brother is watching.</small></h3>
-        </div>
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
-          <a href="#features" class="mdl-layout__tab">FAQ</a>
-          <!-- <div id="add">
-            <button type="button" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
-              <i class="material-icons" role="presentation">camera_enhance</i>
-              <span class="visuallyhidden">Add</span>
-            </button>
-            <input type="file" capture="camera" accept="image/*">
-          </div> -->
+				body[yahoo] .half-height {
+					height: 40px !important;
+				}
+			}
 
-          <div id="add">
-            <span class="material-icons" role="presentation" style="position: relative;top: 6px;left: 43px;z-index: 1;">camera_enhance</span>
-            <span class="visuallyhidden">Add</span>
-            <input class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" type="file" capture="camera" accept="image/*" id="takePictureField" style="text-indent: 100px;">
-          </div>
-        </div>
-      </header>
-      <main class="mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active" id="overview">
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <!-- <i class="material-icons">play_circle_filled</i> -->
-              <img id="yourimage" style="width: 100%;height: 100%;">
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Features</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
-              </div>
-            </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
-          </section>
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <h4 class="mdl-cell mdl-cell--12-col">Details</h4>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-                </div>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
-              </div>
-            </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
-          </section>
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text">
-                <h4>Technology</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
-              </div>
-            </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
-          </section>
-          <section class="section--footer mdl-color--white mdl-grid">
-            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
-            </div>
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-            </div>
-            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
-            </div>
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-            </div>
-          </section>
-        </div>
-        <div class="mdl-layout__tab-panel" id="features">
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
-            <div class="mdl-cell mdl-cell--12-col">
-              <h4>Frequently asked questions (FAQ)</h4>
-              Minim duis incididunt est cillum est ex occaecat consectetur. Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-              <ul class="toc">
-                <h4>Contents</h4>
-                <a href="#lorem1">Lorem ipsum</a>
-                <a href="#lorem2">Lorem ipsum</a>
-                <a href="#lorem3">Lorem ipsum</a>
-                <a href="#lorem4">Lorem ipsum</a>
-                <a href="#lorem5">Lorem ipsum</a>
-              </ul>
+			@media all and (max-width: 480px) {
+				body[yahoo] .edit-font {
+					font-size: 14px !important;
+				}
+			}
 
-              <h5 id="lorem1">Lorem ipsum dolor sit amet</h5>
-              Excepteur et pariatur officia veniam anim culpa cupidatat consequat ad velit culpa est non.
-              <ul>
-                <li>Nisi qui nisi duis commodo duis reprehenderit consequat velit aliquip.</li>
-                <li>Dolor consectetur incididunt in ipsum laborum non et irure pariatur excepteur anim occaecat officia sint.</li>
-                <li>Lorem labore proident officia excepteur do.</li>
-              </ul>
+			@media all and (max-width: 479px) {
+				body[yahoo] .edit-width {
+					width: 100% !important;
+					display: table !important;
+					text-align: center;
+				}
 
-              <p>
-                Sit qui est voluptate proident minim cillum in aliquip cupidatat labore pariatur id tempor id. Proident occaecat occaecat sint mollit tempor duis dolor cillum anim. Dolore sunt ea mollit fugiat in aliqua consequat nostrud aliqua ut irure in dolore. Proident aliqua culpa sint sint exercitation. Non proident occaecat reprehenderit veniam et proident dolor id culpa ea tempor do dolor. Nulla adipisicing qui fugiat id dolor. Nostrud magna voluptate irure veniam veniam labore ipsum deserunt adipisicing laboris amet eu irure. Sunt dolore nisi velit sit id. Nostrud voluptate labore proident cupidatat enim amet Lorem officia magna excepteur occaecat eu qui. Exercitation culpa deserunt non et tempor et non.
-              </p>
-              <p>
-                Do dolor eiusmod eu mollit dolore nostrud deserunt cillum irure esse sint irure fugiat exercitation. Magna sit voluptate id in tempor elit veniam enim cupidatat ea labore elit. Aliqua pariatur eu nulla labore magna dolore mollit occaecat sint commodo culpa. Eu non minim duis pariatur Lorem quis exercitation. Sunt qui ex incididunt sit anim incididunt sit elit ad officia id.
-              </p>
-              <p id="lorem2">
-                Tempor voluptate ex consequat fugiat aliqua. Do sit et reprehenderit culpa deserunt culpa. Excepteur quis minim mollit irure nulla excepteur enim quis in laborum. Aliqua elit voluptate ad deserunt nulla reprehenderit adipisicing sint. Est in eiusmod exercitation esse commodo. Ea reprehenderit exercitation veniam adipisicing minim nostrud. Veniam dolore ex ea occaecat non enim minim id ut aliqua adipisicing ad. Occaecat excepteur aliqua tempor cupidatat aute dolore deserunt ipsum qui incididunt aliqua occaecat sit quis. Culpa sint aliqua aliqua reprehenderit veniam irure fugiat ea ad.
-              </p>
-              <p>
-                Eu minim fugiat laborum irure veniam Lorem aliqua enim. Aliqua veniam incididunt consequat irure consequat tempor do nisi deserunt. Elit dolore ad quis consectetur sint laborum anim magna do nostrud amet. Ea nulla sit consequat quis qui irure dolor. Sint deserunt excepteur consectetur magna irure. Dolor tempor exercitation dolore pariatur incididunt ut laboris fugiat ipsum sunt veniam aute sunt labore. Non dolore sit nostrud eu ad excepteur cillum eu ex Lorem duis.
-              </p>
-              <p>
-                Id occaecat velit non ipsum occaecat aliqua quis ut. Eiusmod est magna non esse est ex incididunt aute ullamco. Cillum excepteur sint ipsum qui quis velit incididunt amet. Qui deserunt anim enim laborum cillum reprehenderit duis mollit amet ad officia enim. Minim sint et quis aliqua aliqua do minim officia dolor deserunt ipsum laboris. Nulla nisi voluptate consectetur est voluptate et amet. Occaecat ut quis adipisicing ad enim. Magna est magna sit duis proident veniam reprehenderit fugiat reprehenderit enim velit ex. Ullamco laboris culpa irure aliquip ad Lorem consequat veniam ad ipsum eu. Ipsum culpa dolore sunt officia laborum quis.
-              </p>
+				body[yahoo] .font320 {
+					font-size: 15px !important;
+				}
 
-              <h5 id="lorem3">Lorem ipsum dolor sit amet</h5>
+				body[yahoo] .heading-font320 {
+					font-size: 24px !important;
+				}
 
-              <p id="lorem4">
-                Eiusmod nulla aliquip ipsum reprehenderit nostrud non excepteur mollit amet esse est est dolor. Dolore quis pariatur sit consectetur veniam esse ullamco duis Lorem qui enim ut veniam. Officia deserunt minim duis laborum dolor in velit pariatur commodo ullamco eu. Aute adipisicing ad duis labore laboris do mollit dolor cillum sunt aliqua ullamco. Esse tempor quis cillum consequat reprehenderit. Adipisicing proident anim eu sint elit aliqua anim dolore cupidatat fugiat aliquip qui.
-              </p>
-              <p id="lorem5">
-                Nisi eiusmod esse cupidatat excepteur exercitation ipsum reprehenderit nostrud deserunt aliqua ullamco. Anim est irure commodo eiusmod pariatur officia. Est dolor ipsum excepteur magna aliqua ad veniam irure qui occaecat eiusmod aute fugiat commodo. Quis mollit incididunt amet sit minim velit eu fugiat voluptate excepteur. Sit minim id pariatur ex cupidatat cupidatat nostrud nostrud ipsum.
-              </p>
-              <p>
-                Enim ea officia excepteur ad veniam id reprehenderit eiusmod esse mollit consequat. Esse non aute ullamco Lorem aliqua qui dolore irure eiusmod aute aliqua proident labore aliqua. Ipsum voluptate voluptate exercitation laborum deserunt nulla elit aliquip et minim ex veniam. Duis cupidatat aute sunt officia mollit dolor ad elit ad aute labore nostrud duis pariatur. In est sint voluptate consectetur velit ea non labore. Ut duis ea aliqua consequat nulla laboris fugiat aute id culpa proident. Minim eiusmod laboris enim Lorem nisi excepteur mollit voluptate enim labore reprehenderit officia mollit.
-              </p>
-              <p>
-                Cupidatat labore nisi ut sunt voluptate quis sunt qui ad Lorem esse nisi. Ex esse velit ullamco incididunt occaecat dolore veniam tempor minim adipisicing amet. Consequat in exercitation est elit anim consequat cillum sint labore cillum. Aliquip mollit laboris ad labore anim.
-              </p>
-            </div>
-          </section>
-        </div>
-        <footer class="mdl-mega-footer">
-          <div class="mdl-mega-footer--middle-section">
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Features</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Updates</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Details</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Spec</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">Resources</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">Technology</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Patterns</a></li>
-                <li><a href="#">Usage</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contracts</a></li>
-              </ul>
-            </div>
-            <div class="mdl-mega-footer--drop-down-section">
-              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-              <h1 class="mdl-mega-footer--heading">FAQ</h1>
-              <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">Questions</a></li>
-                <li><a href="#">Answers</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="mdl-mega-footer--bottom-section">
-            <div class="mdl-logo">
-              More Information
-            </div>
-            <ul class="mdl-mega-footer--link-list">
-              <li><a href="#">Help</a></li>
-              <li><a href="#">Privacy and Terms</a></li>
-            </ul>
-          </div>
-        </footer>
-      </main>
-    </div>
-    <a href="#" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Contact us</a>
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+			}
 
-    <script>
-    var desiredWidth;
-    $(document).ready(function() {
-      console.log('onReady');
-      $("#takePictureField").on("change",gotPic);
+		</style>
+	</head>
+	<body style="color: rgb(255, 255, 255); font-family: Lato, Arial, sans-serif; font-weight: normal; font-size: 11px; line-height: 1; width: 100% !important;" alink="#4a4a4a" link="#4a4a4a" text="#4a4a4a" yahoo="fix">
+		<table class="wrapper" cellpadding="0" cellspacing="0" border="0" width="650" align="center" style="background:#383838; font-family: 'Lato', Arial, Helvetica, sans-serif; font-size: 14px;">
 
-      desiredWidth = window.innerWidth;
+			<!-- section1 start here -->
+			<tbody><tr>
+				<td>
+				<table cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td width="20">&nbsp;</td>
+						<td>
+						<table cellpadding="0" cellspacing="0" border="0" width="100%">
+							<tbody><tr>
+								<td>
+								<table cellpadding="0" cellspacing="0" border="0" width="100%">
+									<!-- 1 -->
+									<tbody><tr>
+										<td height="68">&nbsp;</td>
+									</tr>
 
-      if(!("url" in window) && ("webkitURL" in window)) {
-        window.URL = window.webkitURL;
-      }
+									<!-- 2 -->
+									<tr>
+										<td align="center" style="text-align: center; font-weight: bold; font-size: 14px; font-family: Lato, Arial, Helvetica, sans-serif; color: rgb(255, 255, 255); letter-spacing: 1px; text-transform: uppercase; word-spacing: 6px; outline: none; outline-offset: 1px; position: relative;" class="editable edit-text" data-selector="td.editable" contenteditable="false" spellcheck="false">Wedding Invitation</td>
+									</tr>
 
-    });
+									<!-- 3 -->
+									<tr>
+										<td height="18">&nbsp;</td>
+									</tr>
 
-    //Credit: https://www.youtube.com/watch?v=EPYnGFEcis4&feature=youtube_gdata_player
-    function gotPic(event) {
-      if(event.target.files.length == 1 &&
-        event.target.files[0].type.indexOf("image/") == 0) {
-          $("#yourimage").attr("src",URL.createObjectURL(event.target.files[0]));
-        }
-    }
+									<!-- 4 -->
+									<tr>
+										<td align="center">
+										<table cellpadding="0" cellspacing="0" border="0" align="center">
+											<tbody><tr>
+												<td align="center" width="49" style="border-bottom: 3px solid #d45656;">&nbsp;</td>
+											</tr>
+										</tbody></table></td>
+									</tr>
+									<!-- 5 -->
+									<tr>
+										<td height="13">&nbsp;</td>
+									</tr>
 
-  </script>
-  </body>
-</html>
+									<!-- 6 -->
+									<tr>
+										<td class="heading-font320  editable edit-text" style="text-align: center; font-size: 30px; font-family: Cinzel, Arial, Helvetica, sans-serif; color: rgb(255, 255, 255); letter-spacing: 2px; word-spacing: 7px; outline: none; outline-offset: 1px; position: relative;" data-selector="td.editable" contenteditable="false" spellcheck="false">Rui &amp; Sheree</td>
+									</tr>
+									<!-- 7 -->
+									<tr>
+										<td height="7">&nbsp;</td>
+									</tr>
+									<!-- 8 -->
+									<tr>
+										<td align="center" style="text-align: center; font-family: Lato, Arial, Helvetica, sans-serif; color: #d3d3d3; font-size: 14px; text-transform: uppercase; letter-spacing: 5px; word-spacing: 1px; outline: none; outline-offset: 1px; position: relative;" class="editable edit-text" data-selector="td.editable" contenteditable="false" spellcheck="false">03 June 2017</td>
+									</tr>
+
+									<!-- 9 -->
+									<tr>
+										<td height="45">&nbsp;</td>
+									</tr>
+								</tbody></table></td>
+							</tr>
+						</tbody></table></td>
+
+						<td width="20">&nbsp;</td>
+					</tr>
+				</tbody></table></td>
+
+				<!-- section1 end here -->
+			</tr>
+
+		</tbody></table>
+
+    <table class="wrapper" cellpadding="0" cellspacing="0" border="0" width="650" align="center">
+      <!-- section6 start here -->
+      <tbody>
+        <tr>
+        <td>
+          <!-- bg.cm -->
+          <img src="images/main_banner.jpg" alt="main banner" width="650" style="height: 344; width: 100%; display: block;" data-selector="div.editable img" class="editableImg">
+        </td>
+      </tr>
+
+      <!-- section2 end here <-->
+
+    </tbody></table>
+
+    <table class="wrapper" cellpadding="0" cellspacing="0" border="0" width="650" align="center" style="background:#383838; font-family: 'Lato', Arial, Helvetica, sans-serif; font-size: 14px;">
+
+
+			<!-- section3 start here -->
+			<tbody><tr>
+
+				<td>
+				<table cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td width="20">&nbsp;</td>
+						<td>
+
+							<table cellpadding="0" cellspacing="0" border="0" width="100%">
+
+							<tbody><tr>
+								<td>
+
+						<table cellpadding="0" cellspacing="0" border="0" width="100%">
+							<!-- 1 -->
+							<tbody><tr>
+								<td height="38">&nbsp;</td>
+							</tr>
+							<!-- 2-->
+							<tr>
+								<td class="font320 editable edit-text" align="center" style="text-align: center; font-size: 22px; font-family: Cinzel, Arial, Helvetica, sans-serif; text-transform: uppercase; color: rgb(255, 255, 255); letter-spacing: 3px; outline: none; outline-offset: 1px; position: relative;" data-selector="td.editable" contenteditable="false" spellcheck="false">dear , *|FNAME|*</td>
+							</tr>
+
+							<!-- 3-->
+							<!-- <tr>
+								<td height="11">&nbsp;</td>
+							</tr> -->
+
+							<!-- 4-->
+							<tr>
+								<td align="center">
+								<table cellpadding="0" cellspacing="0" border="0" align="center">
+									<tbody><tr>
+										<td align="center" width="57" style="border-bottom: 2px solid #d45656">&nbsp;</td>
+									</tr>
+								</tbody></table></td>
+							</tr>
+
+							<!-- 5-->
+							<tr>
+								<td height="15">&nbsp;</td>
+							</tr>
+
+							<!-- 6-->
+							<tr>
+								<td align="center" style="text-align: center; font-size: 14px; font-family: Lato, Arial, Helvetica, sans-serif; color: #d3d3d3; letter-spacing: 3px; outline: none; outline-offset: 1px; position: relative;" class="editable edit-text" data-selector="td.editable" contenteditable="false" spellcheck="false">Together with their family and friends. </br> Rui & Sheree invite you to join them as they become Mr. & Mrs.</td>
+							</tr>
+
+							<!-- 7-->
+							<tr>
+								<td height="32">&nbsp;</td>
+							</tr>
+
+							<!-- 8-->
+
+
+							<!-- 9-->
+							<tr>
+								<td height="35">&nbsp;</td>
+							</tr>
+
+						</tbody></table>
+
+								</td>
+							</tr>
+
+							</tbody></table>
+
+						</td>
+
+						<td width="20">&nbsp;</td>
+					</tr>
+				</tbody></table></td>
+
+				<!-- section3 end here -->
+			</tr>
+
+
+		</tbody></table>
+
+    <table class="wrapper" cellpadding="0" cellspacing="0" border="0" width="650" align="center" style="background:#383838; font-family: 'Lato', Arial, Helvetica, sans-serif; font-size: 14px;">
+
+			<!-- section4 start here -->
+			<tbody><tr>
+				<td>
+				<table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+					<!-- 1-->
+					<tbody><tr>
+						<td align="center" class="edit-width" valign="top" width="50%">
+						<div class="editable img_right_edit" style="position: relative; display: inline-block;" contenteditable="false"><img src="images/img1.jpg" alt="View Map" height="316" width="320" style="height: 310; width: 100%; display: block;" data-selector="div.editable img" class="editableImg">
+						</div></td>
+
+						<td align="center" class="edit-width" valign="top" width="50%" style="background: #474747;">
+						<table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+							<tbody><tr>
+								<td>
+								<table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+									<tbody><tr>
+										<td width="20">&nbsp;</td>
+										<td>
+										<table cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+											<!-- 1-1-->
+											<tbody><tr>
+												<td class="half-height" height="40">&nbsp;</td>
+											</tr>
+
+											<!-- 1-2-->
+											<tr>
+												<td class="edit-font font320 editable edit-text" align="center" style="text-align: center; font-size: 18px; font-family: Cinzel, Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 2px; word-spacing: 2px; color: rgb(255, 255, 255); outline: none; outline-offset: 1px; position: relative;" data-selector="td.editable" contenteditable="false" spellcheck="false">Makiti Wedding Venue</td>
+											</tr>
+											<tr>
+												<td class="edit-font font320 editable edit-text" align="center" style="text-align: center; font-size: 18px; font-family: Cinzel, Arial, Helvetica, sans-serif; letter-spacing: 2px; word-spacing: 2px; color: rgb(255, 255, 255); outline: none; outline-offset: 1px; position: relative;" data-selector="td.editable" contenteditable="false" spellcheck="false">Ballroom River Chapel</td>
+											</tr>
+
+											<!-- 1-3-->
+											<!-- <tr>
+												<td height="0">&nbsp;</td>
+											</tr> -->
+
+											<!-- 1-4-->
+											<tr>
+												<td align="center">
+												<table cellpadding="0" cellspacing="0" border="0" align="center">
+													<tbody><tr>
+														<td align="center" width="45" style="border-bottom: 2px solid #d45656">&nbsp;</td>
+													</tr>
+												</tbody></table></td>
+											</tr>
+
+											<!-- 1-5-->
+											<tr>
+												<td height="18">&nbsp;</td>
+											</tr>
+
+											<!-- 1-6-->
+											<tr>
+												<td align="center" style="text-align: center; color: #d3d3d3; word-spacing: 6px; line-height: 1.2; font-size: 12px; outline: none; outline-offset: 1px; position: relative;" class="editable edit-text" data-selector="td.editable" contenteditable="false" spellcheck="false">Sterkfontein Cave Rd, Krugersdorp, 1740 <br> 13:30 for 14:00 Wedding Ceremony, <br> Reception to Follow. <br> 00:00 After party and Bonfire.</td>
+											</tr>
+
+											<!-- 1-7-->
+											<tr>
+												<td height="26">&nbsp;</td>
+											</tr>
+
+											<!-- 1-8-->
+											<tr>
+												<td>
+												<table class="btn-editable" cellpadding="0" cellspacing="0" border="0" align="center" width="153" style="background: rgb(78, 78, 78); outline: none; outline-offset: 1px; position: relative;" data-selector=".btn-editable" contenteditable="false" spellcheck="false">
+													<tbody><tr>
+                            <td class="editable" height="45" align="center" style="text-align: center;"><a class="btn-editable" style="text-align: center; font-family: Lato, Arial, Helvetica, sans-serif; text-transform: uppercase; font-size: 14px; color: rgb(255, 255, 255); background-color: #d45656; letter-spacing: 2px; text-decoration: none; padding: 0px 10px; line-height: 45px; display: block; outline: none; outline-offset: 1px; position: relative;" href="info/#/step-3" data-selector=".btn-editable" contenteditable="false" spellcheck="false">
+    													View Map
+    												</a>
+    												</td>
+
+													</tr>
+												</tbody></table></td>
+
+											</tr>
+
+											<!-- 1-9-->
+											<tr>
+												<td height="20">&nbsp;</td>
+											</tr>
+
+										</tbody></table></td>
+										<td width="20">&nbsp;</td>
+									</tr>
+								</tbody></table></td>
+							</tr>
+						</tbody></table></td>
+					</tr>
+				</tbody></table></td>
+				<!-- section4 end here -->
+			</tr>
+
+		</tbody></table>
+
+    <table class="wrapper" cellpadding="0" cellspacing="0" border="0" width="650" align="center" style="background:#383838; font-family: 'Lato', Arial, Helvetica, sans-serif; font-size: 14px;">
+
+ <tbody><tr>
+				<td>
+
+				<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+					<!-- 1-->
+
+						<tbody><tr>
+
+
+						<td width="50%" valign="top" align="center" style="background: #474747;" class="edit-width">
+						<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+							<tbody><tr>
+								<td>
+									<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+										<tbody><tr>
+								<td width="20">&nbsp;</td>
+								<td>
+								<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+									<!-- 1-1-->
+									<tbody><tr>
+										<td height="60" class="half-height">&nbsp;</td>
+									</tr>
+
+									<!-- 1-2-->
+									<tr>
+										<td align="center" style="text-align: center; font-size: 18px; font-family: Cinzel, Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 2px; word-spacing: 2px; color: rgb(255, 255, 255); outline: none; outline-offset: 1px; position: relative;" class="edit-font font320 editable edit-text" data-selector="td.editable" contenteditable="false" spellcheck="false">
+											THINGS TO NOTE</td>
+									</tr>
+
+									<!-- 1-3-->
+									<!-- <tr>
+										<td height="11">&nbsp;</td>
+									</tr> -->
+
+									<!-- 1-4-->
+									<tr>
+										<td align="center">
+										<table cellspacing="0" cellpadding="0" border="0" align="center">
+											<tbody><tr>
+												<td width="45" align="center" style="border-bottom: 2px solid #d45656">&nbsp;</td>
+											</tr>
+										</tbody></table></td>
+									</tr>
+
+									<!-- 1-5-->
+									<tr>
+										<td height="18">&nbsp;</td>
+									</tr>
+
+									<!-- 1-6-->
+									<tr>
+										<td class="editable edit-text" align="center" style="text-align: center; color: #d3d3d3; letter-spacing: 2px; word-spacing: 6px; line-height: 1.2; font-size: 12px; outline: none; outline-offset: 1px; position: relative; " data-selector="td.editable" contenteditable="false" spellcheck="false">Wedding info</td>
+									</tr>
+									<tr>
+										<td class="editable edit-text" align="center" style="text-align: center; color: #d3d3d3; letter-spacing: 2px; word-spacing: 6px; line-height: 1.2; font-size: 12px; outline: none; outline-offset: 1px; position: relative; " data-selector="td.editable" contenteditable="false" spellcheck="false">Travel info</td>
+									</tr>
+									<tr>
+										<td class="editable edit-text" align="center" style="text-align: center; color: #d3d3d3; letter-spacing: 2px; word-spacing: 6px; line-height: 1.2; font-size: 12px; outline: none; outline-offset: 1px; position: relative; " data-selector="td.editable" contenteditable="false" spellcheck="false">Key people</td>
+									</tr>
+
+
+									<!-- 1-7-->
+									<tr>
+										<td height="26">&nbsp;</td>
+									</tr>
+
+									<!-- 1-8-->
+									<tr>
+										<td>
+										<table width="153" cellspacing="0" cellpadding="0" border="0" align="center" style="background: #4e4e4e;">
+											<tbody><tr>
+												<td class="editable" height="45" align="center" style="text-align: center;"><a class="btn-editable" style="text-align: center; font-family: Lato, Arial, Helvetica, sans-serif; text-transform: uppercase; font-size: 14px; color: rgb(255, 255, 255); background-color: #d45656; letter-spacing: 2px; text-decoration: none; padding: 0px 10px; line-height: 45px; display: block; outline: none; outline-offset: 1px; position: relative;" href="info/#/bored" data-selector=".btn-editable" contenteditable="false" spellcheck="false">
+													read more
+												</a>
+												</td>
+											</tr>
+										</tbody></table></td>
+
+									</tr>
+
+									<!-- 1-9-->
+									<tr>
+										<td height="20">&nbsp;</td>
+									</tr>
+
+								</tbody></table></td>
+								<td width="20">&nbsp;</td>
+							</tr>
+									</tbody></table>
+								</td>
+							</tr>
+						</tbody></table></td>
+
+						<td width="50%" valign="top" align="center" class="edit-width">
+							<div class="editable img_left_edit left_pos" style="position: relative; display: inline-block;" contenteditable="false">
+								<img width="320" height="316" style="height: 310; width: 100%; display: block;" alt="Read more" src="images/img2.jpg" data-selector="div.editable img" class="editableImg">
+							</div>
+						</td>
+					</tr>
+				</tbody></table>
+				</td>
+
+			</tr>
+
+		</tbody></table>
+
+    <table class="wrapper" cellpadding="0" cellspacing="0" border="0" width="650" align="center" background="images/section6.jpg" style="background-image: url(images/section6.jpg);background-position: center top;background-repeat: no-repeat; background-size: cover;background-color:#575656; font-family: 'Lato', Arial, Helvetica, sans-serif; font-size: 14px;">
+			<!-- section6 start here -->
+			<tbody><tr>
+				<td>
+					<!-- bg.cm -->
+				<table cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td valign="top"><!--[if gte mso 9]>
+						<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;height:205px;">
+						<v:fill type="tile" src="images/section6.jpg" color="#575656" />
+						<v:textbox inset="0,0,0,0">
+						<![endif]-->
+						<div>
+							<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+								<tbody><tr>
+									<td width="20">&nbsp;</td>
+									<td>
+									<table width="100%" cellspacing="0" cellpadding="0" border="0">
+										<tbody><tr>
+											<td>
+											<table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+												<tbody><tr>
+													<td height="30">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td align="center" style="text-align: center; word-spacing: 4px; letter-spacing: 2px; font-family: Lato, Arial, Helvetica, sans-serif; text-transform: uppercase; font-size: 14px; color: rgb(237, 237, 237); outline: none; outline-offset: 1px; position: relative;" class="font320 editable edit-text" data-selector="td.editable" contenteditable="false" spellcheck="false"> “The best thing to hold onto in life is each other” </td>
+												</tr>
+
+												<tr>
+													<td height="21">&nbsp;</td>
+												</tr>
+
+												<tr>
+													<td align="center" style="text-align: center; font-size: 11px; color: rgb(255, 255, 255); font-family: Lato, Arial, Helvetica, sans-serif; text-transform: uppercase; letter-spacing: 2px; word-spacing: 2px; outline: none; outline-offset: 1px; position: relative;" class="editable edit-text" data-selector="td.editable" contenteditable="false" spellcheck="false"><span style="color: #ffffff; ">- Rui &amp; Sheree -</span></td>
+
+												</tr>
+
+                        <tr>
+													<td height="20">&nbsp;</td>
+												</tr>
+                        <tr>
+          								<td align="center" style="text-align: center; font-size: 14px; font-family: Lato, Arial, Helvetica, sans-serif; color: rgb(255, 255, 255); letter-spacing: 3px; outline: none; outline-offset: 1px; position: relative;" class="editable edit-text" data-selector="td.editable" contenteditable="false" spellcheck="false">Kindly RSVP by 24 March 2017.</td>
+          							</tr>
+
+                        <tr>
+													<td height="20">&nbsp;</td>
+												</tr>
+                        <tr>
+          								<td>
+          								<table class="btn-editable" cellpadding="0" cellspacing="0" border="0" align="center" width="177" style="background: #4e4e4e;" data-selector=".btn-editable">
+          									<tbody><tr>
+                              <td class="editable" height="45" align="center" style="text-align: center;"><a class="btn-editable" style="text-align: center; font-family: Lato, Arial, Helvetica, sans-serif; text-transform: uppercase; font-size: 14px; color: rgb(255, 255, 255); background-color: #d45656; letter-spacing: 2px; text-decoration: none; padding: 0px 10px; line-height: 45px; display: block; outline: none; outline-offset: 1px; position: relative;" href="info/#/title" data-selector=".btn-editable" contenteditable="false" spellcheck="false">
+                                RSVP
+                              </a>
+                              </td>
+          									</tr>
+          								</tbody></table></td>
+
+          							</tr>
+
+												<tr>
+													<td height="30">&nbsp;</td>
+												</tr>
+
+											</tbody></table></td>
+										</tr>
+									</tbody></table></td>
+									<td width="20">&nbsp;</td>
+								</tr>
+							</tbody></table>
+
+						</div><!--[if gte mso 9]>
+						</v:textbox>
+						</v:rect>
+						<![endif]--></td>
+					</tr>
+				</tbody></table>
+				<!-- bg.cm end -->
+				</td>
+			</tr>
+
+			<!-- section6 end here <-->
+
+		</tbody></table>
+
+    <table class="wrapper" cellpadding="0" cellspacing="0" border="0" width="650" align="center" style="background:#383838; font-family: 'Lato', Arial, Helvetica, sans-serif; font-size: 14px;">
+
+			<!-- section 5 start here -->
+			<tbody><tr>
+				<td>
+				<table cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody><tr>
+						<td width="20">&nbsp;</td>
+						<td>
+						<table cellpadding="0" cellspacing="0" border="0" width="100%">
+							<tbody><tr>
+								<td>
+								<table cellpadding="0" cellspacing="0" border="0" width="100%">
+									<tbody><tr>
+										<td height="55">&nbsp;</td>
+									</tr>
+
+									<tr>
+										<td class="font320 editable" align="center" style="text-align: center; letter-spacing: 3px; word-spacing: 4px; font-family: 'Cinzel', Arial, Helvetica, sans-serif; text-transform: uppercase; font-size:18px; color: #fff;" data-selector="td.editable">for further assistance</td>
+									</tr>
+
+									<tr>
+										<td height="3">&nbsp;</td>
+									</tr>
+
+									<tr>
+										<td class="tel editable" align="center" style="text-align: center;font-family: 'Lato', Arial, Helvetica, sans-serif; font-size:12px; color: #fff; letter-spacing: 2px; word-spacing: 2px;" data-selector="td.editable"><span style="color: #a9a9a9;">Please contact</span> Rui - 073 8376 180, Sheree - 072 7789 848 </td>
+
+									</tr>
+                  <tr height="30">
+										<td class="tel editable" align="center" style="text-align: center;font-family: 'Lato', Arial, Helvetica, sans-serif; font-size:12px; color: #fff; letter-spacing: 2px; word-spacing: 2px;" data-selector="td.editable"><span style="color: #a9a9a9;">or</span> </td>
+
+									</tr>
+                  <tr>
+										<td class="tel editable" align="center" style="text-align: center;font-family: 'Lato', Arial, Helvetica, sans-serif; font-size:12px; color: #fff; letter-spacing: 2px; word-spacing: 2px;" data-selector="td.editable">rui.sheree@gmail.com </td>
+
+									</tr>
+
+									<tr>
+										<td height="52">&nbsp;</td>
+									</tr>
+
+								</tbody></table></td>
+							</tr>
+						</tbody></table></td>
+						<td width="20">&nbsp;</td>
+					</tr>
+				</tbody></table></td>
+
+				<!-- section5 end here -->
+			</tr>
+
+		<tr>
+
+				<td height="36" style="background: #575656;">&nbsp;</td>
+
+		</tr>
+
+
+		</tbody></table>
+
+</body></html>
