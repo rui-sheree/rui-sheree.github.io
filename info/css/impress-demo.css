@@ -437,7 +437,6 @@ a:focus {
 */
 #its-in-3d span,
 #its-in-3d b {
-    display: inline-block;
     -webkit-transform: translateZ(40px);
     -moz-transform:    translateZ(40px);
     -ms-transform:     translateZ(40px);
@@ -583,7 +582,6 @@ a:focus {
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 200px;
 
     background: rgba(0,0,0,0.5);
     color: #EEE;
@@ -633,7 +631,7 @@ a:focus {
 /*
     ... and we will show it when the first step (with id 'bored') is active.
 */
-.impress-on-bored .hint {
+.impress-on-title .hint {
     /*
         We remove the transparency and position the hint in its default fixed
         position.
@@ -701,3 +699,75 @@ a:focus {
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
     for you.
 */
+
+.media-wrapper {
+  margin-top: 20px;
+  float: left;
+  width: 50%;
+}
+.media {
+  margin-top: 15px;
+}
+.media:first-child {
+  margin-top: 0;
+}
+.media,
+.media-body {
+  overflow: hidden;
+  zoom: 1;
+}
+.media-body {
+  width: 10000px;
+}
+.media-object {
+  display: block;
+}
+.media-object.img-thumbnail {
+  max-width: none;
+}
+.media-right,
+.media > .pull-right {
+  padding-left: 10px;
+}
+.media-left,
+.media > .pull-left {
+  padding-right: 10px;
+}
+.media-left,
+.media-right,
+.media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+.media-middle {
+  vertical-align: middle;
+}
+.media-bottom {
+  vertical-align: bottom;
+}
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.media-list {
+  padding-left: 0;
+  list-style: none;
+}
+.list-group {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.slide-heading {
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+}
