@@ -273,20 +273,9 @@
 				/*@editable*/ text-align:center;
 			}
 
-			/**
-			* @tab Body
-			* @section body link
-			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
-			*/
-			.bodyContent div a:link, .bodyContent div a:visited, /* Yahoo! Mail Override */ .bodyContent div a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#d45656;
-				/*@editable*/ font-weight:normal;
-				/*@editable*/ text-decoration:none;
-			}
-
 			.bodyContent img{
 				display:inline;
-				height:auto;
+				height:320px;
 			}
 
 			/* /\/\/\/\/\/\/\/\/\/\ STANDARD STYLING: FOOTER /\/\/\/\/\/\/\/\/\/\ */
@@ -323,7 +312,7 @@
 			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
 			*/
 			.footerContent div a:link, .footerContent div a:visited, /* Yahoo! Mail Override */ .footerContent div a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#d45656;
+				/*@editable*/ color:#fafafa;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:none;
 			}
@@ -390,10 +379,14 @@
       */
       .templateButton a, .templateButton a:link, .templateButton a:visited, /* Yahoo! Mail Override */ .templateButton a .yshortcuts /* Yahoo! Mail Override */{
         /*@editable*/ color:#fafafa !important;
-        letter-spacing: 3px;
 				/*@editable*/ font-family:'Lato';
 				/*@editable*/ text-align:center;
 				/*@editable*/ text-transform:uppercase;
+        letter-spacing: 3px;
+        line-height: 3;
+        padding: 10px;
+        text-decoration: none;
+        color: #fafafa;
       }
 		</style>
 	</head>
@@ -401,7 +394,7 @@
     	<center>
         	<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable">
             	<tr>
-                	<td align="center" valign="top">
+                <td align="center" valign="top">
                     	<table border="0" cellpadding="0" cellspacing="0" width="650" id="templateContainer">
                         <tr>
                           <td align="center" valign="top">
@@ -480,11 +473,11 @@
                                                                Travel info
                                                             </div>
                                                             <br>
-                                                            <table align="center" border="0" cellpadding="15" cellspacing="0" class="templateButton">
+                                                            <table align="center" border="0" cellpadding="0" cellspacing="0">
                                                               	<tr>
-                                                                  	<td valign="middle" class="templateButtonContent">
+                                                                  	<td valign="middle" class="templateButton">
                                                                       	<div mc:edit="std_content01">
-                                                                          	<a href="https://rcb-ferreira.github.io/info/#/title" target="_blank">Read More</a>
+                                                                          	<a href="https://rcb-ferreira.github.io/info/#/title" target="_blank">READ MORE</a>
                                                                           </div>
                                                                       </td>
                                                                   </tr>
@@ -504,11 +497,11 @@
                                                                Makiti, Sterkfontein Cave Rd, Krugersdorp, 1740 <br> 13:30 for 14:00 Wedding Ceremony, Reception to Follow. <br> 00:00 After party and Bonfire.
                                                             </div>
                                                             <br>
-                                                            <table align="center" border="0" cellpadding="15" cellspacing="0" class="templateButton">
+                                                            <table align="center" border="0" cellpadding="0" cellspacing="0">
                                                               	<tr>
-                                                                  	<td valign="middle" class="templateButtonContent">
+                                                                  	<td valign="middle" class="templateButton">
                                                                       	<div mc:edit="std_content02">
-                                                                          	<a href="https://www.google.co.za/maps/place/Makiti+Wedding+Venue/@-26.0123995,27.7207043,14z/data=!4m5!3m4!1s0x1e959aa9db9a5905:0x20f765d79a1a98c5!8m2!3d-26.0123995!4d27.7382138!6m1!1e1" target="_blank">View Map</a>
+                                                                          	<a href="https://www.google.co.za/maps/place/Makiti+Wedding+Venue/@-26.0123995,27.7207043,14z/data=!4m5!3m4!1s0x1e959aa9db9a5905:0x20f765d79a1a98c5!8m2!3d-26.0123995!4d27.7382138!6m1!1e1" target="_blank">VIEW MAP</a>
                                                                           </div>
                                                                       </td>
                                                                   </tr>
@@ -545,9 +538,9 @@
 
                                                               <h4>Kindly RSVP by 24 March 2017</h4>
 
-                                                              <table align="center" border="0" cellpadding="15" cellspacing="0" class="templateButton">
+                                                              <table align="center" border="0" cellpadding="0" cellspacing="0">
                                                                 	<tr>
-                                                                    	<td valign="middle" class="templateButtonContent">
+                                                                    	<td valign="middle" class="templateButton">
                                                                         	<div mc:edit="std_content01">
                                                                             	<a href="https://goo.gl/forms/veVZRq7MC0GKLFTE2" target="_blank">RSVP</a>
                                                                             </div>
